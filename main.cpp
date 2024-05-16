@@ -4,11 +4,17 @@ using namespace std;
 
 int main()
 {
-	for (int i = 0; i < 5; i++)
+	cout << "enter column";
+	int col;
+	cin >> col;
+	cout << "enter row";
+	int row;
+	cin >> row;
+	for (int i = 0; i < col; i++)
 	{
-		for (int j = 0; j < 5; j++)
+		for (int j = 0; j < row; j++)
 		{
-			if (i + j >= 4 && i >= j || i + j <= 4 && i <= j)
+			if (i + j >= col - 2 && i >= j || i + j <= col - 2 && i <= j)
 			{ 
 				cout << "*";
 			}
