@@ -14,7 +14,7 @@ int main()
 	{
 		for (size_t j = 0; j < row; j++)
 		{
-			if (i <= j)
+			if (i >= j)
 			{
 				cout << "*";
 			}
@@ -22,8 +22,8 @@ int main()
 			{
 				cout << " ";
 			}
-			cout << endl;
-		}
+
+		}cout << endl;
 	}
 	system("pause");
 	return 0;
