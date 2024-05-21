@@ -10,24 +10,26 @@ int main()
 	cout << "enter end of diapasone";
 	int d2;
 	cin >> d2;
-	cout << "enter num";
 	int numb;
-	cin >> numb;
 
-	for (;numb <= d2 && numb >= d1;)
-	{
-		if (numb > d2 || numb < d1)
-		{
-			cout << "no" << endl;
-			cout << "enter num";
-			cin >> numb;
-		}
-		if (numb <= d2 && numb >= d1)
-		{
-			cout << "yes" << endl;
-			return 0;
-		}
-	}
+    if (d1 > d2) {
+        cout << "start of  the diapasone is bigger is larger than the end" << endl;
+        return 0;
+        system("pause");
+    }
+
+    while (true) {
+        cout << "enter number ";
+        cin >> numb;
+
+        if (numb >= d1 && numb  <= d2) {
+            cout << "your number in diapasone" << endl;
+            break;
+        }
+        else {
+            cout << "your number are not in diapasone" << endl;
+        }
+    }
 	return 0;
-	//system("pause");
+	system("pause");
 }
